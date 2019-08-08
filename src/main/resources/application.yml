@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.0.0.62:3306/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+server:
+  servlet:
+    context-path: /sell # All the url should start with /sell. LIKE: 10.0.0.62:8081/sell
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n" # define a pattern that print on the console
+##  path: /var/log/romcat/
+#  file: /var/log/romcat/sell.log # specify a file to save the log
+#  level:
+#    com.wechatapp.sell.LoggerTest: debug # specify a method, and change the default level from info to debug
+#
