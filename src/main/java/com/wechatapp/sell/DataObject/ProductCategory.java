@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity // Use @DataObject to make a database an object
 @DynamicUpdate   // Help with automatically update columns that set as on update in mysql schema
 @Data // lombok dependency and @Data enable 省略getter and setter and toString()
-public class ProductCategory {
+public class ProductCategory {  // Spring boot automatically convert table name in mysql to camel-case
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto increased
