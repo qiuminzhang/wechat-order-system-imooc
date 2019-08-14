@@ -98,8 +98,8 @@ public class OrderServiceImpl implements OrderService {
         // 3. Write into orderMaster database
         OrderMaster orderMaster = new OrderMaster();
         // copyProperties also copy null value, so copy first, then set values.
+        orderDTO.setOrderId(orderId);
         BeanUtils.copyProperties(orderDTO, orderMaster);
-        orderMaster.setOrderId(orderId);
         orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());

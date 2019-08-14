@@ -1,8 +1,11 @@
 package com.wechatapp.sell.DTO;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.wechatapp.sell.DataObject.OrderDetail;
 import com.wechatapp.sell.Enums.OrderStatusEnum;
 import com.wechatapp.sell.Enums.PayStatusEnum;
+import com.wechatapp.sell.Serializer.Date2LongSerializer;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -13,6 +16,9 @@ import java.util.List;
  * different levels like service level, controller level and DAO level.*/
 
 @Data
+//@JsonInclude(JsonInclude.Include.NON_NULL )
+// ⬆️If any attribute is null, don't even show the attribute name in json result.
+// This annotation has been configured at application.yml file
 public class OrderDTO {
     private String orderId;
 
@@ -32,8 +38,10 @@ public class OrderDTO {
     private Integer payStatus;
 
     /** Because we will order or the orders, so we need these two times in this class.*/
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
 
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;
