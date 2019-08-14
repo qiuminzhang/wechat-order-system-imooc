@@ -317,3 +317,7 @@ HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17
 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7633f34e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52908d90 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m32s489ms).
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
