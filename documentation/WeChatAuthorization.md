@@ -37,17 +37,17 @@ have a subscription account, WeChat offers ways to set it.
         
         If you're using ip address, enter "xxx.xxx.xxx.xxx:8080", replace xxx with your ip address. 
         
-2. **Write weChatController to get authorization and get code**
-    1. According to official documentation:
+#### STEP 2 **Write weChatController to get authorization and get code**
+1. According to official documentation:
            
            If we want to get the code, we need to let the user open a url 
            "https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect"
-    This url requires appid, redirect_uri and scope. Once we get all the params and complete the url, we let the user open this url, the webpage
+   This url requires appid, redirect_uri and scope. Once we get all the params and complete the url, we let the user open this url, the webpage
     will be redirected to the redirect_uri, and the code would be returned with the redirection.         
     
-    2. Write a method to get code
+2. Write a method to get code
     
-    ```java
+   ```java
     @RestController
     @RequestMapping("/weixin")
     @Slf4j // log
@@ -58,17 +58,55 @@ have a subscription account, WeChat offers ways to set it.
             log.info("GO TO auth METHOD...");
             log.info("code = {}", code);
         }
-    ```
+   }
+   ```
    
    **Run the code**.
    
-    For my case, the redirect_uri is ```http://10.0.0.92:8080/sell/weixin/auth```.
+   For my case, the redirect_uri is ```http://10.0.0.92:8080/sell/weixin/auth```.
     
- 3. **Build url, let user to open it.** 
+3. **Build url, let user to open it.** 
  
     For my case , the url is ```https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafafbd714ab6aed6&redirect_uri=http://10.0.0.92:8080/sell/weixin/auth&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect```
     . I send this url to my cellphone end, and open it inner the weChat. The opened page is a blank page, 
     if I check the IDE consle, I can find the returned code. So far so good.
+    
+4. **Get access_token then Get Openid from the response**
+    
+    Build the url ```https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxafafbd714ab6aed6&secret=c0e2309a7c143b9b2d96035e4cffd7ae&code=CODE&grant_type=authorization_code```
+    
+    Then, get request the url to get the openid from the response.
+    ```java
+    public class WeChatController {
+        @GetMapping("/auth")
+        public void auth(@RequestParam("code") String code) {
+            log.info("GO TO auth METHOD...");
+            log.info("code = {}", code);
+    
+            String url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxafafbd714ab6aed6&secret=c0e2309a7c143b9b2d96035e4cffd7ae&code="
+                    + code +"&grant_type=authorization_code";
+            RestTemplate restTemplate = new RestTemplate();
+            // send a get request to the url, return the response as a String
+            String response = restTemplate.getForObject(url, String.class);
+            log.error("Response = {}", response); // the response is a json, it contains openid which is important for the payment.
+        }
+    }
+    ```
+   
+   
+## ALTERNATIVE to get openid
+
+Use this [SKD](https://github.com/Wechat-Group/WxJava),
+find the [wiki](https://github.com/Wechat-Group/WxJava/wiki/企业号开发文档) for documentation. 
+Add this dependency into maven:
+```        
+<dependency>
+   <groupId>com.github.binarywang</groupId>
+   <artifactId>weixin-java-mp</artifactId>
+   <version>3.5.0</version>
+</dependency>
+```
+
     
 
         

@@ -26,8 +26,12 @@ public class OrderForm2OrderDTOConverter {
         orderDTO.setBuyerOpenid(orderForm.getOpenid());
 
 
-        // Items in orderForm is a json String as API.
-        // We need to convert the json string to a required list, so we use gson dependency here
+        // Items in orderForm is a json-like String as API shown.
+        // We need to convert the json string to a required array, so we use gson dependency here
+        // In this case, the gson detect each item from the String, then convert each item
+        // to an OrderDetail object. From each item, the gson find keys corresponding fields in the
+        // OrderDetail object, then assign their value in the object. All converted items are returned as
+        // an orderDetailList array.
         List<OrderDetail> orderDetailList = new ArrayList<>();
         try {
             orderDetailList = gson.fromJson(orderForm.getItems(),

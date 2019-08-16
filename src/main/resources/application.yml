@@ -13,6 +13,11 @@ server:
   servlet:
     context-path: /sell # All the url should start with /sell. LIKE: 10.0.0.62:8081/sell
 
+wechat:
+  mpAppId: wxafafbd714ab6aed6
+  mpAppSecret: c0e2309a7c143b9b2d96035e4cffd7ae
+
+
 
 #logging:
 #  pattern:
