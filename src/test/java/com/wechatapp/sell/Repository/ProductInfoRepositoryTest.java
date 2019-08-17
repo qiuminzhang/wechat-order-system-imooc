@@ -25,13 +25,13 @@ public class ProductInfoRepositoryTest {
     @Test
     public void saveTest(){
         ProductInfo productInfo = new ProductInfo();
-        productInfo.setProductId("111");
-        productInfo.setProductName("5 Tenders");
-        productInfo.setProductPrice(new BigDecimal(8.9));
+        productInfo.setProductId("113");
+        productInfo.setProductName("Chicken Fingers");
+        productInfo.setProductPrice(new BigDecimal(12.9));
         productInfo.setProductStatus(0);
-        productInfo.setProductStock(12);
+        productInfo.setProductStock(20);
         productInfo.setProductIcon("http://tenders.com");
-        productInfo.setCategoryType(2);
+        productInfo.setCategoryType(1);
         productInfo.setProductDescription("Spicy and tender");
 
         repository.save(productInfo);

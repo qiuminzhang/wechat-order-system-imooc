@@ -27,11 +27,11 @@ public class ProductCategoryRepositoryTest {
     }
 
     @Test
-    @Transactional  // With this annotation, the test result won't really go to database. Roll back
+    //@Transactional  // With this annotation, the test result won't really go to database. Roll back
     public void saveTest(){   // add
         ProductCategory productCategory = new ProductCategory();
-        productCategory.setCategoryName("Boys' likes");
-        productCategory.setCategoryType(4);
+        productCategory.setCategoryName("Hot Issues");
+        productCategory.setCategoryType(3);
         ProductCategory result = repository.save(productCategory);
         Assert.assertNotNull(result);
     }

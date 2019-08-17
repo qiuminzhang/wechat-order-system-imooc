@@ -15,6 +15,7 @@ public class WeixinController {
     @GetMapping("/auth")
     public void auth(@RequestParam("code") String code) {
         log.info("GO TO auth METHOD...");
+        // Before get code, we let the user open a url as document mentions.
         log.info("code = {}", code);
 
         String url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxafafbd714ab6aed6&secret=c0e2309a7c143b9b2d96035e4cffd7ae&code="

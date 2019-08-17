@@ -30,7 +30,8 @@ public class WeChatController {
     public String authorize(@RequestParam("returnUrl") String returnUrl){
         // 1. configuration
         // 2. call method
-        String redirect_uri = "http://10.0.0.92:8080/sell/wechat/userinfo";
+//        String redirect_uri = "http://zqmsell.nat100.top/sell/wechat/userinfo";
+        String redirect_uri = "http://zqmsell.nat100.top/sell/wechat/userinfo";
         // redirectUrl contains code and state which are params in the redirectUrl
         String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(redirect_uri, WxConsts.OAuth2Scope.SNSAPI_BASE, URLEncoder.encode(returnUrl));
         log.info("【微信网页授权】获取code, result = {}", redirectUrl);
@@ -38,7 +39,7 @@ public class WeChatController {
         return "redirect:" + redirectUrl;   // redirect to /userinfo which trigger the userInfo() method.
     }
 
-    // 运行完suthorize方法后，重定向到redirectUrl，which is userInfo，触发了userInfo方法。这时就会拿到code， state，
+    // 运行完suthorize方法后，重定向到redirectUrl，which is userInfo，触发了userInfo方法。这时就会拿到code, state，
     // 然后进一步请求access_token和openid
     @GetMapping("/userinfo")
     public String userInfo(@RequestParam("code") String code,
@@ -53,9 +54,9 @@ public class WeChatController {
         }
 
         String openId = wxMpOAuth2AccessToken.getOpenId();
-        log.info("redirectUrl:" + returnUrl + "?openid=" + openId);
+        log.info("[INFO] redirectUrl:" + returnUrl + "?openid=" + openId);
 
-        return "redirectUrl:" + returnUrl + "?openid=" + openId;
+        return "redirect:" + returnUrl + "?openid=" + openId;
         // Because @Controller enables redirection, the process wll end up with redirecting
         // to returnUrl + "?openid=" + openId.
         // TODO: why "redirectUrl" in the start of return? does it mean redirect? doesn't it bother?
