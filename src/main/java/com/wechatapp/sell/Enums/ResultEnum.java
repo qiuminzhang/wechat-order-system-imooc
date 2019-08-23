@@ -18,6 +18,7 @@ public enum ResultEnum {
     CART_EMPTY(18, "Cart is empty"),
     ORDER_OWNER_ERROR(19, "This order doesn't belong to this openid"),
     WECHAT_MP_ERROR(20, "WeChat MP account error"),
+    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "WXPay nofity money verity error");
     ;
 
     private Integer code;

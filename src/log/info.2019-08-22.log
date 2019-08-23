@@ -1,0 +1,1789 @@
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 12927 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 140ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49bce7c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 29.331 seconds (JVM running for 30.841)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = PayRequest(payTypeEnum=WXPAY_H5, orderId=1566029318245662840, orderAmount=32.7, orderName=WeChat Order, openid=1566029318245662840, spbillCreateIp=null)
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 165
+
+<xml>
+   <appid>wxafafbd714ab6aed6</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>bIO0qAhFiUAixlO1</nonce_str>
+   <sign>043B081D63E943D97E7CD7A781174B5A</sign>
+--> END POST (165-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1889ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 04:15:31 GMT
+Content-Type: text/plain
+Content-Length: 106
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[XML格式错误]]></return_msg></xml>
+<-- END HTTP (106-byte body)
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 13032 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 72ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$749846f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1351 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.5 seconds (JVM running for 30.174)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 16 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 13059 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 91ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11468bc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1339 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.402 seconds (JVM running for 30.083)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 16 ms
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 13900 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 129ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b66eaba8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 27.828 seconds (JVM running for 29.1)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = PayRequest(payTypeEnum=WXPAY_H5, orderId=1566029318245662840, orderAmount=32.7, orderName=WeChat Order, openid=1566029318245662840, spbillCreateIp=null)
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 165
+
+<xml>
+   <appid>wxafafbd714ab6aed6</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>ZNLrvNH7Rb0c6SZ1</nonce_str>
+   <sign>41C36120C5A1F95261A0E6E3EA8533BE</sign>
+--> END POST (165-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1718ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 05:43:56 GMT
+Content-Type: text/plain
+Content-Length: 106
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[XML格式错误]]></return_msg></xml>
+<-- END HTTP (106-byte body)
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 13967 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 116ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62dd5507] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 26.826 seconds (JVM running for 28.246)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = PayRequest(payTypeEnum=WXPAY_H5, orderId=1566029318245662840, orderAmount=32.7, orderName=WeChat Order, openid=1566029318245662840, spbillCreateIp=null)
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 476
+
+<xml>
+   <appid>wxafafbd714ab6aed6</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>xtwWdzWazNk6ZV23</nonce_str>
+   <sign>5A096D7725B6393368DD6F534EDB85CB</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>1566029318245662840</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (476-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1896ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 05:50:10 GMT
+Content-Type: text/plain
+Content-Length: 116
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[appid和mch_id不匹配]]></return_msg>
+</xml>
+<-- END HTTP (116-byte body)
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 14001 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 117ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62dd5507] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 26.7 seconds (JVM running for 27.932)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = PayRequest(payTypeEnum=WXPAY_H5, orderId=1566029318245662840, orderAmount=32.7, orderName=WeChat Order, openid=1566029318245662840, spbillCreateIp=null)
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 476
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>fPlLK1byTa0v4rqo</nonce_str>
+   <sign>DAEC52A874151DA71D1B23B7344FB66B</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>1566029318245662840</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (476-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1627ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 05:58:46 GMT
+Content-Type: text/plain
+Content-Length: 440
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[RWGzMtldcDHiLSdY]]></nonce_str>
+<sign><![CDATA[DCF50B326B4D18032266AE97CDC2B0F5]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[PARAM_ERROR]]></err_code>
+<err_code_des><![CDATA[无效的openid]]></err_code_des>
+</xml>
+<-- END HTTP (440-byte body)
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 14012 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 109ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15124f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 26.915 seconds (JVM running for 28.177)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = PayRequest(payTypeEnum=WXPAY_H5, orderId=1566029318245662840, orderAmount=32.7, orderName=WeChat Order, openid=1566029318245662840, spbillCreateIp=null)
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 476
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>7Vxmh7SRr1sPsLTn</nonce_str>
+   <sign>09F0B284F646DB6F0D46690A74B85491</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>1566029318245662840</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (476-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1796ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 05:59:54 GMT
+Content-Type: text/plain
+Content-Length: 440
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[mTMxi1zZgvJqI1iE]]></nonce_str>
+<sign><![CDATA[A6C1B2281CCBF460D0F47710C3AD1372]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[PARAM_ERROR]]></err_code>
+<err_code_des><![CDATA[无效的openid]]></err_code_des>
+</xml>
+<-- END HTTP (440-byte body)
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 14021 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 108ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7eeb0fbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 27.293 seconds (JVM running for 28.492)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = PayRequest(payTypeEnum=WXPAY_H5, orderId=1566029318245662840, orderAmount=32.7, orderName=WeChat Order, openid=oTgZpwRku1yFDxaw0D1nsi6CXoSk, spbillCreateIp=null)
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>fu7XeEgEdV35NSN5</nonce_str>
+   <sign>EEA5FD62DF5B830B7CA48912C27F3D4C</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1847ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 06:01:27 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[iJYY3x2clAm8EMpJ]]></nonce_str>
+<sign><![CDATA[AB6865135A6E543B4540C495567FFA9D]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx22140127451301e41da94fad1328930900]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = PayResponse(prePayParams=null, payUri=null, appId=wxd898fcb01713c658, timeStamp=1566453687, nonceStr=ZJtjVrzrG6lLwStR, packAge=prepay_id=wx22140127451301e41da94fad1328930900, signType=MD5, paySign=57FAEA141D6769147102877F1495AFDE, orderAmount=null, orderId=null, outTradeNo=null, mwebUrl=null)
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 14093 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 250ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7eeb0fbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 31.262 seconds (JVM running for 32.652)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>6x1ABusUFKHJK1Bg</nonce_str>
+   <sign>E45906662ED87BFE6DAE96CD525552B6</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1930ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 06:11:04 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[x1apGgxy730r9R2C]]></nonce_str>
+<sign><![CDATA[BA9E6B2387DAD472F8B56CDB641F3308]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx22141104423240e41da94fad1985316400]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566454264",
+  "nonceStr": "ClTu9E9TNy6EyRsT",
+  "packAge": "prepay_id\u003dwx22141104423240e41da94fad1985316400",
+  "signType": "MD5",
+  "paySign": "8208FB0CEF34EDC9FC148C259585637B"
+}
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 14914 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 79ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$68440498] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1871 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 25.404 seconds (JVM running for 31.221)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 13 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 836 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 73ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9791eecc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1653 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 25.114 seconds (JVM running for 31.029)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 12 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 1195 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 62ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3376fa5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1231 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.607 seconds (JVM running for 30.246)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 10 ms
+Starting PayServiceImplTest on zhangqiumindeMacBook-Pro.local with PID 1312 (started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 110ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5fb33a09] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Started PayServiceImplTest in 26.751 seconds (JVM running for 28.991)
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>AYa8bDIuztTgKYfr</nonce_str>
+   <sign>75EDC6C591C3BF709405D51E16DA8282</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1587ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 17:26:07 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[eFnlo1dEZEwLjIj6]]></nonce_str>
+<sign><![CDATA[75DD84A41D5373B9B9374AE51D779091]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23012607685854e41da94fad1091363300]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566494767",
+  "nonceStr": "g7JjohM4h6xtw3Jb",
+  "packAge": "prepay_id\u003dwx23012607685854e41da94fad1091363300",
+  "signType": "MD5",
+  "paySign": "4A0F936540DC6ABFEAFDDEF928E5A00C"
+}
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 1352 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 68ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b85d0d67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1333 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.294 seconds (JVM running for 29.932)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 10 ms
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 2605 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 94ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d77381ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1832 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 25.497 seconds (JVM running for 31.906)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 22 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>f1jN2RzZpIz7lgGr</nonce_str>
+   <sign>01FC2A5739EDACAC4CDA15BFC0F2BA93</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (2006ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 21:10:28 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[k3HrUuWBf8ooxnTx]]></nonce_str>
+<sign><![CDATA[253E512AEEE61BEAE461DC23F4A6D0E9]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23051028084543e41da94fad1884721600]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566508228",
+  "nonceStr": "2SPIViRmvX80yCXt",
+  "packAge": "prepay_id\u003dwx23051028084543e41da94fad1884721600",
+  "signType": "MD5",
+  "paySign": "25A643C7F875DD7BC8CC05F64460B1AA"
+}
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>lUaNt7bVW7uJRfkU</nonce_str>
+   <sign>3349B5AA0932C1B92B2A38FAB1DE1E11</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (2265ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 21:13:59 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[GSrK4IbprJngCVf1]]></nonce_str>
+<sign><![CDATA[F53D8444E9B0624121BEBA4CA68A2E7C]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23051359230396e41da94fad1800511800]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566508439",
+  "nonceStr": "um5jprPEkIjOasEy",
+  "packAge": "prepay_id\u003dwx23051359230396e41da94fad1800511800",
+  "signType": "MD5",
+  "paySign": "E19C61994231C3EA9519F309C4D41A2E"
+}
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>dSetDwpIjpRW7aNA</nonce_str>
+   <sign>356D0C6FC921ADDCE5B0D39E45DAA34C</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'orderId' is not present]
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1987ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 21:14:26 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[794hpm0XbV5h435G]]></nonce_str>
+<sign><![CDATA[FC1AD4708609D9AD6D2B016E178F4A1B]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23051426541129e41da94fad1511313400]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566508466",
+  "nonceStr": "rA3aD3NpOIEGmVU5",
+  "packAge": "prepay_id\u003dwx23051426541129e41da94fad1511313400",
+  "signType": "MD5",
+  "paySign": "CD68FEE7EDC178811774CD4823E3B403"
+}
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>TmcRXlWsogONujLQ</nonce_str>
+   <sign>E2E8168A703DF876158D776A0BE01900</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1814ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 21:20:32 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[jZkI8y2r3CSUGEcO]]></nonce_str>
+<sign><![CDATA[FC67C7227A4A558571AB303C6127D8A7]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23052032734512e41da94fad1236977500]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566508832",
+  "nonceStr": "yS9syzfo5zpKeHVM",
+  "packAge": "prepay_id\u003dwx23052032734512e41da94fad1236977500",
+  "signType": "MD5",
+  "paySign": "01EE6A3EB8CC57D5DAF5C37C051869E2"
+}
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 2946 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 79ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f3d40bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1281 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.244 seconds (JVM running for 29.947)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 9 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'orderId' is not present]
+Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'orderId' is not present]
+Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'returnUrl' is not present]
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3004 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 93ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8bce763] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1540 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 25.584 seconds (JVM running for 31.374)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 12 ms
+HHH000397: Using ASTQueryTranslatorFactory
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m9s780ms).
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3048 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 117ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cf20dc69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1746 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 26.754 seconds (JVM running for 32.547)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 12 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3063 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 91ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3dd20359] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1506 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 25.131 seconds (JVM running for 30.943)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 16 ms
+HHH000397: Using ASTQueryTranslatorFactory
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s973ms).
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3088 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 71ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$819e6851] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1320 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.247 seconds (JVM running for 29.817)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 9 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3113 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 76ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f380d2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1238 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.354 seconds (JVM running for 29.933)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 14 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3168 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 72ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9791eecc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1326 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.301 seconds (JVM running for 29.835)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 24 ms
+Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'orderId' is not present]
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>KJddFUK6BP9DWXSe</nonce_str>
+   <sign>8644AF4738F673F00420DEC131796385</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1878ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:06:33 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[mYWhGdZXJ9CYpzfK]]></nonce_str>
+<sign><![CDATA[49BD0C20753E623243BEE685B097253F]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23060633619198e41da94fad1583262500]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566511593",
+  "nonceStr": "M4FFXqh8PwVO4MZv",
+  "packAge": "prepay_id\u003dwx23060633619198e41da94fad1583262500",
+  "signType": "MD5",
+  "paySign": "3664E7A101356A4A1FDF03E42DA3DF97"
+}
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3191 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 70ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff3ac9af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1295 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.247 seconds (JVM running for 29.811)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 10 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>ilL8AAUz8vHMQ0Qh</nonce_str>
+   <sign>3AE04310C1F896E475E550FEE0EDDDC2</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1787ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:08:14 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[aRa6qJ26ivBCAwVT]]></nonce_str>
+<sign><![CDATA[88E74DADFD71EC906BD2B8AB9AB0F09C]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23060814776328e41da94fad1858320300]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566511694",
+  "nonceStr": "a0EZKSFiX4JJwJ11",
+  "packAge": "prepay_id\u003dwx23060814776328e41da94fad1858320300",
+  "signType": "MD5",
+  "paySign": "ABAE0176010C15C315F4476DB6C7EA44"
+}
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3225 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 83ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc12183a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1453 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.825 seconds (JVM running for 30.381)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 14 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>bALPkzzLmeIx37HT</nonce_str>
+   <sign>04568ED55ECB2CB910F7D13559DD44B8</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1703ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:17:06 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[sDteigK33HGUKhkJ]]></nonce_str>
+<sign><![CDATA[408A83268FA982112E1F485BBB8699F2]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23061706711351e41da94fad1423046200]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566512226",
+  "nonceStr": "k7ZYKCNVZzXgdg6L",
+  "packAge": "prepay_id\u003dwx23061706711351e41da94fad1423046200",
+  "signType": "MD5",
+  "paySign": "40EB93952DF281EE6D741C72DB4CA444"
+}
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>DleuY1RBIFyEaWuF</nonce_str>
+   <sign>EC9E492F75BE027858385B7EC39CA8E8</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1677ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:17:59 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[A5Rhagre1IjNaQ1R]]></nonce_str>
+<sign><![CDATA[C6E67B51C53CE16E55BFAD83AE9E1B89]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23061759192132e41da94fad1483793000]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566512279",
+  "nonceStr": "BaX8mbjJbQLkvvhG",
+  "packAge": "prepay_id\u003dwx23061759192132e41da94fad1483793000",
+  "signType": "MD5",
+  "paySign": "C2F4A2ED05078E56D21157687C9FACCC"
+}
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>EZsvU5z0Xbv4C0rA</nonce_str>
+   <sign>ADD718F06F4059C2A33A5A52327B8A17</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1544ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:23:51 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[gLT6yEJI49A8yGbp]]></nonce_str>
+<sign><![CDATA[FE95DFBA5A579DFC64895FE5365D5052]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23062351122231e41da94fad1382566100]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566512631",
+  "nonceStr": "was4ZQ1aGtPJ1o19",
+  "packAge": "prepay_id\u003dwx23062351122231e41da94fad1382566100",
+  "signType": "MD5",
+  "paySign": "E5E1FAA7E6FDACE1BC46B376CCA941D6"
+}
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662840",
+  "orderAmount": 32.7,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 485
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>x61eibEghjPZY5eh</nonce_str>
+   <sign>46E4FEABC39B233ECC75341FA757A65E</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662840</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>3270</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (485-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1517ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:24:48 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[7t8vJROcTRb3OFqI]]></nonce_str>
+<sign><![CDATA[72655FF90FF7078635AD4B4FCB5182DA]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx23062448842284e41da94fad1587479600]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566512688",
+  "nonceStr": "BfzG5w9dTk0sKz0F",
+  "packAge": "prepay_id\u003dwx23062448842284e41da94fad1587479600",
+  "signType": "MD5",
+  "paySign": "AB49F2148946037D93E07F117AB77F13"
+}
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3403 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 95ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d10ead74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1623 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.718 seconds (JVM running for 30.308)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 8 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662841",
+  "orderAmount": 0.01,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 482
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>Jm0NR8zFXUcDsDgT</nonce_str>
+   <sign>236CD17F12842603832E6E2039EA8AB3</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662841</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>1</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (482-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1480ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:28:02 GMT
+Content-Type: text/plain
+Content-Length: 456
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[ueIImufc3tjunYO8]]></nonce_str>
+<sign><![CDATA[BA6FA029FF7DDC6CEFDDF3833FAD9E32]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx230628024596694cf8a8ee401451792000]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+<-- END HTTP (456-byte body)
+【WeChat Payment】 payResponse = {
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1566512882",
+  "nonceStr": "speVlmA3HSbIxH2o",
+  "packAge": "prepay_id\u003dwx230628024596694cf8a8ee401451792000",
+  "signType": "MD5",
+  "paySign": "916B2C8509A495F0BB6C535D8BAD94DB"
+}
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662841",
+  "orderAmount": 0.01,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 482
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>7Th2DXlwvpc5ii14</nonce_str>
+   <sign>E3FBE6E1461F2B4FAC3AE5EEE8265DAE</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662841</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>1</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (482-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1266ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:28:50 GMT
+Content-Type: text/plain
+Content-Length: 441
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[KfLfMruUpIW5LG3b]]></nonce_str>
+<sign><![CDATA[373462539C684C9D46130982B8B0476A]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[ORDERPAID]]></err_code>
+<err_code_des><![CDATA[该订单已支付]]></err_code_des>
+</xml>
+<-- END HTTP (441-byte body)
+【WeChat Payment】 request = {
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1566029318245662841",
+  "orderAmount": 0.01,
+  "orderName": "WeChat Order",
+  "openid": "oTgZpwRku1yFDxaw0D1nsi6CXoSk"
+}
+--> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+Content-Type: application/xml; charset=utf-8
+Content-Length: 482
+
+<xml>
+   <appid>wxd898fcb01713c658</appid>
+   <mch_id>1483469312</mch_id>
+   <nonce_str>698shMqyeEDK2J1N</nonce_str>
+   <sign>317B81A46284B0B03292EAEB6718F3D9</sign>
+   <body>WeChat Order</body>
+   <notify_url>http://zqmsell.nat100.top/sell/pay/notify</notify_url>
+   <openid>oTgZpwRku1yFDxaw0D1nsi6CXoSk</openid>
+   <out_trade_no>1566029318245662841</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>1</total_fee>
+   <trade_type>JSAPI</trade_type>
+</xml>
+--> END POST (482-byte body)
+<-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (1186ms)
+Server: nginx
+Date: Thu, 22 Aug 2019 22:28:57 GMT
+Content-Type: text/plain
+Content-Length: 441
+Connection: keep-alive
+Keep-Alive: timeout=8
+
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxd898fcb01713c658]]></appid>
+<mch_id><![CDATA[1483469312]]></mch_id>
+<nonce_str><![CDATA[JAYpPWERS7tie1lp]]></nonce_str>
+<sign><![CDATA[F9FB66B7A96B4410E932DE974504FF09]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[ORDERPAID]]></err_code>
+<err_code_des><![CDATA[该订单已支付]]></err_code_des>
+</xml>
+<-- END HTTP (441-byte body)
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3447 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 71ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2419c1fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1330 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.422 seconds (JVM running for 30.141)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 17 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信网页授权】获取code, result = https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd898fcb01713c658&redirect_uri=http%3A%2F%2Fzqmsell.nat100.top%2Fsell%2Fwechat%2Fuserinfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+【微信网页授权】获取code, result = https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd898fcb01713c658&redirect_uri=http%3A%2F%2Fzqmsell.nat100.top%2Fsell%2Fwechat%2Fuserinfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+【微信网页授权】获取code, result = https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd898fcb01713c658&redirect_uri=http%3A%2F%2Fzqmsell.nat100.top%2Fsell%2Fwechat%2Fuserinfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on zhangqiumindeMacBook-Pro.local with PID 3572 (/Users/zhangqiumin/IntelliJProjects/sell/target/classes started by zhangqiumin in /Users/zhangqiumin/IntelliJProjects/sell)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 67ms. Found 4 repository interfaces.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$59094093] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.22]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1252 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.3.10.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Initializing ExecutorService 'applicationTaskExecutor'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 24.111 seconds (JVM running for 29.647)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 7 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信网页授权】获取code, result = https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafafbd714ab6aed6&redirect_uri=http%3A%2F%2Fzqmsell.nat100.top%2Fsell%2Fwechat%2Fuserinfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+[INFO] redirectUrl:http://sell.com/#/?openid=o9mHNvz2_UA35angqy_ScZpK-exk
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21s837ms).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55m30s318ms).

@@ -14,8 +14,19 @@ server:
     context-path: /sell # All the url should start with /sell. LIKE: 10.0.0.62:8081/sell
 
 wechat:
-  mpAppId: wxafafbd714ab6aed6
-  mpAppSecret: c0e2309a7c143b9b2d96035e4cffd7ae
+
+#  mpAppId: wxafafbd714ab6aed6 #  my test account's app id, used for authorization
+  mpAppId: wxd898fcb01713c658 # 课程提供的id, used for payment
+  mpAppSecret: c0e2309a7c143b9b2d96035e4cffd7ae # my test account's app secret, is not required for wechat payment
+
+  # Payment / Provider account
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+
+  # 证书地址：发起支付不需要证书，退款需要证书
+  keyPath: /Users/zhangqiumin/IntelliJProjects/sell/src/main/java/com/wechatapp/sell/h5.p12
+  # 支付时用，接受异步通知
+  notifyUrl: http://zqmsell.nat100.top/sell/pay/notify
 
 
 

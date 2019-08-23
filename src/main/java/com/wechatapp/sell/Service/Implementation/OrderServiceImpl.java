@@ -14,6 +14,7 @@ import com.wechatapp.sell.Repository.OrderDetailRepository;
 import com.wechatapp.sell.Repository.OrderMasterRepository;
 import com.wechatapp.sell.Repository.ProductInfoRepository;
 import com.wechatapp.sell.Service.OrderService;
+import com.wechatapp.sell.Service.PayService;
 import com.wechatapp.sell.Service.ProductService;
 import com.wechatapp.sell.Utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -52,6 +53,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     ProductService productService;
+
+    @Autowired
+    PayService payService;
 
     /**
      *
@@ -173,7 +177,7 @@ public class OrderServiceImpl implements OrderService {
         productService.increaseStock(cartDTOList);
         // 4. If paid, refund
         if (orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS.getCode())){
-            // TODO
+            payService.refund(orderDTO);
         }
         return orderDTO;
     }
@@ -199,6 +203,9 @@ public class OrderServiceImpl implements OrderService {
         return orderDTO;
     }
 
+    /**
+     * According to orderstatus and update result, MODIFY Pay Status to success or fail.
+     * */
     @Override
     @Transactional
     public OrderDTO paid(OrderDTO orderDTO) {
