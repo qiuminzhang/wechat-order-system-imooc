@@ -44,4 +44,5 @@ public class OrderMasterRepositoryTest {
         Page<OrderMaster> result = repository.findByBuyerOpenid(OPENID, request);
         Assert.assertNotEquals(0, result.getTotalElements());
     }
+
 }

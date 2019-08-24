@@ -6,6 +6,7 @@ import lombok.Getter;
 
 @Getter
 public enum ResultEnum {
+    SUCCESS(0, "Success"),
     PARAM_ERROR(1, "Wrong Parameters"),
     PRODUCT_NOT_EXIST(10, "Product Not Exist"),
     PRODUCT_STOCK_ERROR(11, "Wrong Stock"),
@@ -18,7 +19,9 @@ public enum ResultEnum {
     CART_EMPTY(18, "Cart is empty"),
     ORDER_OWNER_ERROR(19, "This order doesn't belong to this openid"),
     WECHAT_MP_ERROR(20, "WeChat MP account error"),
-    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "WXPay nofity money verity error");
+    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "WXPay nofity money verity error"),
+    ORDER_CANCEL_SUCCESS(22, "Success to cancel"),
+    ORDER_FINISH_SUCCESS(22, "Success to finish"),
     ;
 
     private Integer code;

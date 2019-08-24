@@ -67,7 +67,7 @@ public class OrderServiceImplTest {
     }
 
     @Test
-    public void findList() {
+    public void findListByOpenid() {
         PageRequest request = PageRequest.of(0, 5);
         Page<OrderDTO> orderDTOPage = orderService.findList(BUYER_OPENID, request);
         Assert.assertNotEquals(0, orderDTOPage.getTotalElements());
@@ -92,5 +92,12 @@ public class OrderServiceImplTest {
         OrderDTO orderDTO = orderService.findOne(ORDER_ID);
         OrderDTO result = orderService.paid(orderDTO);
         Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), result.getPayStatus());
+    }
+
+    @Test
+    public void findList() {
+        PageRequest request = PageRequest.of(0, 5);
+        Page<OrderDTO> orderDTOPage = orderService.findList(request);
+        Assert.assertTrue("Find all orders", orderDTOPage.getTotalElements() > 0);
     }
 }

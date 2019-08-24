@@ -1,11 +1,13 @@
 package com.wechatapp.sell.DTO;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.wechatapp.sell.DataObject.OrderDetail;
 import com.wechatapp.sell.Enums.OrderStatusEnum;
 import com.wechatapp.sell.Enums.PayStatusEnum;
 import com.wechatapp.sell.Serializer.Date2LongSerializer;
+import com.wechatapp.sell.Utils.EnumUtil;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -37,12 +39,23 @@ public class OrderDTO {
 
     private Integer payStatus;
 
-    /** Because we will order or the orders, so we need these two times in this class.*/
-    @JsonSerialize(using = Date2LongSerializer.class)
+    /** Because we will order or update the orders, so we need these two times in this class.*/
+    @JsonSerialize(using = Date2LongSerializer.class)   // convert date to long datatype?
     private Date createTime;
 
     @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;
+
+    /** Given code, return its enum.  eg: given 1 0 for this case, return NEW */
+    @JsonIgnore // If this is a restAPI and an orderDTO would be return, besides the above fields, these two method would return extra two enum, so we need to ignore these two.
+    public OrderStatusEnum getOrderStatusEnum() {
+        return EnumUtil.getEnumValueByCode(orderStatus, OrderStatusEnum.class);
+    }
+
+    @JsonIgnore
+    public PayStatusEnum getPayStatusEnum() {
+        return EnumUtil.getEnumValueByCode(payStatus, PayStatusEnum.class);
+    }
 }

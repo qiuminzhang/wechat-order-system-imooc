@@ -13,7 +13,7 @@ public interface OrderService {
     /** Find single order and its detail*/
     OrderDTO findOne(String orderId);
 
-    /** Find a list of orders*/
+    /** Find a list of orders of given openID*/
     Page<OrderDTO> findList(String buyerOpenid, Pageable pageable);
 
     /** Cancel a order*/
@@ -24,4 +24,7 @@ public interface OrderService {
 
     /** Pay for a order*/
     OrderDTO paid(OrderDTO orderDTO);
+
+    /** Find all orders */
+    Page<OrderDTO> findList(Pageable pageable);
 }

@@ -2,8 +2,9 @@ package com.wechatapp.sell.Enums;
 
 import lombok.Getter;
 
+
 @Getter
-public enum OrderStatusEnum {
+public enum OrderStatusEnum implements CodeEnum {
     NEW(0, "New Order"),
     FINISH(1, "Finished"),
     CANCEL(2, "Canceled"),
