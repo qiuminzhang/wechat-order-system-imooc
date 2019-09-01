@@ -4,7 +4,7 @@ package com.wechatapp.sell.Enums;
 import lombok.Getter;
 
 @Getter
-public enum ProductStatusEnum {
+public enum ProductStatusEnum implements CodeEnum{
     UP(0, "InStock"),
     DOWN(1, "SoldOut")
     ;

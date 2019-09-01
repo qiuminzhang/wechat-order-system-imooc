@@ -21,7 +21,8 @@ public enum ResultEnum {
     WECHAT_MP_ERROR(20, "WeChat MP account error"),
     WXPAY_NOTIFY_MONEY_VERIFY_ERROR(21, "WXPay nofity money verity error"),
     ORDER_CANCEL_SUCCESS(22, "Success to cancel"),
-    ORDER_FINISH_SUCCESS(22, "Success to finish"),
+    ORDER_FINISH_SUCCESS(23, "Success to finish"),
+    PRODUCT_STATUS_ERROR(24, "Wrong product status"),
     ;
 
     private Integer code;

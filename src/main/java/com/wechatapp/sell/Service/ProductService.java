@@ -25,6 +25,12 @@ public interface ProductService {
     // Deduct Stock
     void decreaseStock(List<CartDTO> cartDTOSList);
 
+    // 上架
+    ProductInfo onSale(String productId);
+
+    // 下架
+    ProductInfo offSale(String productId);
+
 
 
 }

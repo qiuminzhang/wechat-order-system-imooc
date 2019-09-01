@@ -12,7 +12,7 @@
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                 <h4>
                     Success!
-                </h4> <strong>${msg}</strong>  <a href=${url} class="alert-link">redirect in 3s ...</a>
+                </h4> <strong>${msg!""}</strong>  <a href=${url!""} class="alert-link">redirect in 3s ...</a>
             </div>
         </div>
     </div>
